@@ -3,7 +3,7 @@ let currAudio;
 document.addEventListener('click',(e)=>{
 	if(e.target.classList.contains('btn')){
 		let audioFile = e.target.getAttribute('data-audio');
-		const audio = new Audio(audioFile); 
+		const audio = new Audio(audioFile);
 		if (currAudio) {
 	      currAudio.pause();
 	    }
